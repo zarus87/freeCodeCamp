@@ -103,7 +103,13 @@ var myLastName = 'Круковский';
 
 24. var myStr = '<a href="http://www.example.com" target="_blank">Link</a>';
 
-25. 
+25. var myStr = "FirstLine\n\t\\SecondLine\nThirdLine"// Change this line
+
+26. var myStr = "This is the start. " + "This is the end." 
+console.log(myStr);
+// Change this line
+
+27. 
 
 
 
