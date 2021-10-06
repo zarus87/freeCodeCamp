@@ -87,4 +87,20 @@ a *= 5;
 b *= 3;
 c *= 10;
 
-21. 
+21. var a = 48;
+var b = 108;
+var c = 33;
+
+// Only change code below this line
+a /= 12;
+b /= 4;
+c /= 11;
+
+22. var myFirstName = 'Кирилл';
+var myLastName = 'Круковский';
+
+23. var myStr = "I am a \"double quoted\" string inside \"double quotes\"."; // Change this line
+
+24. var myStr = '<a href="http://www.example.com" target="_blank">Link</a>';
+
+25. 
