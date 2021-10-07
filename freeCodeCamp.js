@@ -109,7 +109,82 @@ var myLastName = 'Круковский';
 console.log(myStr);
 // Change this line
 
-27. 
+27. // Only change code below this line
+
+var myStr = "This is the first sentence. ";
+myStr += "This is the second sentence."
+
+28. // Only change code below this line
+var myName = "Кирилл";
+var myStr = "My name is " + myName + " and I am well";
+
+29. var someAdjective = "qwe";
+var myStr = "Learning to code is ";
+myStr += someAdjective;
+
+30. // Setup
+var lastNameLength = 0;
+var lastName = "Lovelace";
+
+// Only change code below this line
+
+lastNameLength = lastName.length;
+
+31. // Setup
+var firstLetterOfLastName = "";
+var lastName = "Lovelace";
+
+// Only change code below this line
+firstLetterOfLastName = lastName[0]; // Change this line
+
+32. // Setup
+var myStr = "Jello World";
+
+// Only change code below this line
+myStr = "Hello World"; // Change this line
+// Only change code above this line
+
+33. // Setup
+var lastName = "Lovelace";
+
+// Only change code below this line
+var thirdLetterOfLastName = lastName[2]; // Change this line
+
+34. // Setup
+var lastName = "Lovelace";
+
+// Only change code below this line
+var lastLetterOfLastName = lastName[lastName.length -1]; // Change this line
+
+35. // Setup
+var lastName = "Lovelace";
+
+// Only change code below this line
+var secondToLastLetterOfLastName = lastName[lastName.length -2]; // Change this line
+
+36. var myNoun = "dog";
+var myAdjective = "big";
+var myVerb = "ran";
+var myAdverb = "quickly";
+
+// Only change code below this line
+var wordBlanks = myAdjective + " " + "!" + myNoun  +  " " + myAdverb + " " + myVerb + " "; // Change this line
+// Only change code above this line
+
+37. var myArray = ["dsf", 2];
+
+38. // Only change code below this line
+var myArray = [["Bulls", 23], ["White Sox", 45]];
+
+39. var myArray = [50,60,70];
+var myData = myArray[0];
+
+40. // Setup
+var myArray = [18,64,99];
+myArray[0] = 45
+// Only change code below this line
+
+41.
 
 
 
