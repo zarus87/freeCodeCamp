@@ -392,7 +392,17 @@ function testNotEqual(val) {
 
 testNotEqual(10);
 
-56. 
+56. // Setup
+function testStrictNotEqual(val) {
+  if (val !== 17) { // Change this line
+    return "Not Equal";
+  }
+  return "Equal";
+}
+
+testStrictNotEqual(10);
+
+57. 
 
 
 
