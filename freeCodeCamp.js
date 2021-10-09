@@ -759,7 +759,42 @@ cc(2); cc(3); cc(7); cc('K'); cc('A');
   var hatValue = testObj.hat;      // Change this line
   var shirtValue = testObj.shirt;    // Change this line
 
-  77. 
+  77. // Setup
+  var testObj = {
+    "an entree": "hamburger",
+    "my side": "veggies",
+    "the drink": "water"
+  };
+  
+  // Only change code below this line
+  
+  var entreeValue = testObj["an entree"];   // Change this line
+  var drinkValue = testObj["the drink"];    // Change this line
+
+  78. // Setup
+  var testObj = {
+    12: "Namath",
+    16: "Montana",
+    19: "Unitas"
+  };
+  
+  // Only change code below this line
+  
+  var playerNumber = 16;       // Change this line
+  var player = testObj[playerNumber];   // Change this line
+
+  79. // Setup
+  var myDog = {
+    "name": "Coder",
+    "legs": 4,
+    "tails": 1,
+    "friends": ["freeCodeCamp Campers"]
+  };
+  
+  myDog["name"] = "Happy Coder";
+  // Only change code below this line
+
+  80. 
 
 
 
