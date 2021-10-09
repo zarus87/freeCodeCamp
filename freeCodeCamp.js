@@ -655,7 +655,111 @@ switch (val){
 
 sequentialSizes(1);
 
-71. 
+71. function chainToSwitch(val) {
+  var answer = "";
+  // Only change code below this line
+
+  switch(val) {
+   case "bob":
+    answer = "Marley";
+    break;
+   case 42: 
+    answer = "The Answer";
+    break;
+  case 1:
+    answer = "There is no #1";
+    break;
+  case 99:
+    answer = "Missed me by this much!";
+    break;
+  case 7:
+    answer = "Ate Nine";
+  }
+
+  // Only change code above this line
+  return answer;
+}
+
+chainToSwitch(7);
+
+72. function isLess(a, b) {
+  // Only change code below this line
+  
+    return a < b;
+ 
+  // Only change code above this line
+}
+
+isLess(10, 15);
+
+73. // Setup
+function abTest(a, b) {
+  // Only change code below this line
+if (a<0 || b<0){
+  return undefined
+}
+
+
+  // Only change code above this line
+
+  return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
+}
+
+abTest(2,2);
+
+74. var count = 0;
+
+function cc(card) {
+  // Only change code below this line
+switch (card) {
+case 2:
+case 3:
+case 4:
+case 5:
+case 6:
+   count++;
+   break;
+   case 10:
+   case "J":
+   case "Q":
+   case "K":
+   case "A":
+   count--;
+   break;
+}
+var holdbed = "Hold";
+if (count > 0){
+  holdbed = "Bet"
+} 
+  return count + " " + holdbed;
+  // Only change code above this line
+}
+
+cc(2); cc(3); cc(7); cc('K'); cc('A');
+
+75. var myDog = {
+  // Only change code below this line
+  "name" : "asd",
+  "legs" : 4,
+  "tails" : 1,
+  "friends" : ["sdfs", "sfsd"]
+  
+  // Only change code above this line
+  };
+
+  76. // Setup
+  var testObj = {
+    "hat": "ballcap",
+    "shirt": "jersey",
+    "shoes": "cleats"
+  };
+  
+  // Only change code below this line
+  
+  var hatValue = testObj.hat;      // Change this line
+  var shirtValue = testObj.shirt;    // Change this line
+
+  77. 
 
 
 
