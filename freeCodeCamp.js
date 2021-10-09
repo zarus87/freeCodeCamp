@@ -794,7 +794,46 @@ cc(2); cc(3); cc(7); cc('K'); cc('A');
   myDog["name"] = "Happy Coder";
   // Only change code below this line
 
-  80. 
+  80. var myDog = {
+    "name": "Happy Coder",
+    "legs": 4,
+    "tails": 1,
+    "friends": ["freeCodeCamp Campers"]
+  };
+   myDog.bark = "woof";
+
+   81. // Setup
+   var myDog = {
+     "name": "Happy Coder",
+     "legs": 4,
+     "tails": 1,
+     "friends": ["freeCodeCamp Campers"],
+     "bark": "woof"
+   };
+   
+   delete myDog.tails;// Only change code below this line
+
+   82. // Setup
+   function phoneticLookup(val) {
+     var result = "";
+   
+     // Only change code below this line
+     var lookup = {
+       alpha:"Adams",
+       bravo:"Boston",
+       charlie:"Chicago",
+       delta:"Denver",
+       echo: "Easy",
+       foxtrot:"Frank"
+     }
+   result = lookup[val]
+     // Only change code above this line
+     return result;
+   }
+   
+   phoneticLookup("charlie");
+
+   83. 
 
 
 
