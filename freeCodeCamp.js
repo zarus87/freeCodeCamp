@@ -931,7 +931,27 @@ cc(2); cc(3); cc(7); cc('K'); cc('A');
    }
    console.log(myArray)
 
-   92. 
+   92. var myArr = [ 2, 3, 4, 5, 6];
+   var total = 0;
+   for (var i = 0; i < myArr.length; i++) {
+     total += myArr[i];
+   }
+
+   93. function multiplyAll(arr) {
+    var product = 1;
+    // Only change code below this line
+  for (var i = 0; i < arr.length; i++){
+    for (var j= 0; j <arr[i].length; j++) {
+      product *= arr [i][j]
+    }
+  }
+    // Only change code above this line
+    return product;
+  }
+  console.log()
+  multiplyAll([[1,2],[3,4],[5,6,7]]);
+
+  94. 
 
 
 
