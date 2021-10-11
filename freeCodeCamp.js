@@ -883,7 +883,28 @@ cc(2); cc(3); cc(7); cc('K'); cc('A');
   
   var gloveBoxContents = myStorage.car.inside["glove box"];
 
-  86. 
+  86. var myPlants = [
+    {
+      type: "flowers",
+      list: [
+        "rose",
+        "tulip",
+        "dandelion"
+      ]
+    },
+    {
+      type: "trees",
+      list: [
+        "fir",
+        "pine",
+        "birch"
+      ]
+    }
+  ];
+  
+  var secondTree = myPlants[1].list[1];
+
+  87. 
 
 
 
