@@ -906,6 +906,33 @@ cc(2); cc(3); cc(7); cc('K'); cc('A');
 
   87. 
 
+  88. var myArray = [];
+  var i = 5;
+  while(i > -1 ) {
+    myArray.push(i);
+    i--;
+  }
+  console.log(myArray)
+
+  89. var myArray = [];
+  for(var i = 1; i <6; i++) {
+    myArray.push(i)
+  }
+
+   90. var myArray = [];
+   for(var i = 1; i <10; i +=2) {
+     myArray.push(i);
+   }
+   console.log(myArray)
+
+   91. var myArray = [];
+   for (var i =9; i >0; i-=2 ) {
+     myArray.push(i)
+   }
+   console.log(myArray)
+
+   92. 
+
 
 
 
