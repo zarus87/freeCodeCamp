@@ -833,7 +833,57 @@ cc(2); cc(3); cc(7); cc('K'); cc('A');
    
    phoneticLookup("charlie");
 
-   83. 
+   83. function checkObj(obj, checkProp) {
+    // Only change code below this line
+    if  (obj.hasOwnProperty(checkProp))
+    {
+      return obj[checkProp];
+    } else 
+    {return "Not Found";}
+    // Only change code above this line
+  }
+  84. var myMusic = [
+    {
+      "artist": "Billy Joel",
+      "title": "Piano Man",
+      "release_year": 1973,
+      "formats": [
+        "CD",
+        "8T",
+        "LP"
+      ],
+      "gold": true,
+    },
+      {
+      "artist": "Sloipknot",
+      "title": "IOWA",
+      "release_year": 1999,
+      "formats": [
+        "CD",
+        "8T",
+        "LP",
+        "DVD"
+      ],
+      "gold": true
+      
+    }
+  ];
+
+  85. var myStorage = {
+    "car": {
+      "inside": {
+        "glove box": "maps",
+        "passenger seat": "crumbs"
+       },
+      "outside": {
+        "trunk": "jack"
+      }
+    }
+  };
+  
+  var gloveBoxContents = myStorage.car.inside["glove box"];
+
+  86. 
 
 
 
