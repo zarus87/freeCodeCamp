@@ -951,7 +951,34 @@ cc(2); cc(3); cc(7); cc('K'); cc('A');
   console.log()
   multiplyAll([[1,2],[3,4],[5,6,7]]);
 
-  94. 
+  94. // Setup
+  var myArray = [];
+  var i = 10;
+  
+  // Only change code below this line
+  do   {
+    myArray.push(i);
+    i++;
+  
+  
+  }while (i < 5);
+
+  95. 
+
+
+  // Раздел ES6
+  1. let catName;
+  let quote;
+  function catTalk() {
+    "use strict";
+  
+    catName = "Oliver";
+    quote = catName + " says Meow!";
+  
+  }
+  catTalk();
+
+  2. 
 
 
 
