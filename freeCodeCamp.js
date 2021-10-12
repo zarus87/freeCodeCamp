@@ -967,6 +967,8 @@ cc(2); cc(3); cc(7); cc('K'); cc('A');
 
 
   // Раздел ES6
+
+  
   1. let catName;
   let quote;
   function catTalk() {
@@ -1079,7 +1081,20 @@ const {today: highToday, tomorrow:highTomorrow} = HIGH_TEMPERATURES;
 
 // Only change code above this line
 
-13. 
+13. const LOCAL_FORECAST = {
+  yesterday: { low: 61, high: 75 },
+  today: { low: 64, high: 77 },
+  tomorrow: { low: 68, high: 80 }
+};
+
+// Only change code below this line
+  
+const {today: {low:lowToday, high: highToday}} = LOCAL_FORECAST;
+
+14. let a = 8, b = 6;
+[b,a] = [a,b];
+
+15. 
 
 
 
