@@ -1094,10 +1094,40 @@ const {today: {low:lowToday, high: highToday}} = LOCAL_FORECAST;
 14. let a = 8, b = 6;
 [b,a] = [a,b];
 
-15. 
+15. const source = [1,2,3,4,5,6,7,8,9,10];
+function removeFirstTwo(list) {
+  // Only change code below this line
+  const [a,b, ...arr] = list; // записью в скобках присваиваю 1 это а, 2 это b, запись ...arr даю понять что всё остальное в куче выводиться при запросе!
+// Only change code above this line
+  return arr;
+}
+const arr = removeFirstTwo(source);
+
+16. const stats = {
+  max: 56.78,
+  standard_deviation: 4.34,
+  median: 34.54,
+  mode: 23.87,
+  min: -0.75,
+  average: 35.85
+};
 
 
+const half = ({max, min}) => (max+min) /2;  //как параметры max и min попадают из константы stats попадают в  константу half совершенно не понятно!
 
+
+17.
+
+
+// Раздел Регулярные выражения
+
+
+1. let myString = "Hello, World!";
+let myRegex = /Hello/;
+let result = myRegex.test(myString); 
+console.log(result)// Change this line
+
+2. 
 
 // Раздел Обьектно ориентированного программирования
 
