@@ -1127,7 +1127,35 @@ let myRegex = /Hello/;
 let result = myRegex.test(myString); 
 console.log(result)// Change this line
 
-2. 
+2. let waldoIsHiding = "Somewhere Waldo is hiding in this text.";
+let waldoRegex = /Waldo/; // Change this line
+let result = waldoRegex.test(waldoIsHiding);
+console.log(result)
+
+3. let petString = "James has a pet cat.";
+let petRegex = /dog|cat|bird|fish/; // через знак | можно перебирать варианты слов при поиске по шаблону
+let result = petRegex.test(petString);
+console.log(result)
+
+4. let myString = "freeCodeCamp";
+let fccRegex = /freeCodeCamp/i; // i - позваляет игнорировать пробелы и регистр при поиске
+let result = fccRegex.test(myString);
+console.log(result)
+
+5. let extractStr = "Extract the word 'coding' from this string.";
+let codingRegex = /coding/; // Change this line
+let result = extractStr.match(/coding/); // .match повазяет извлечь слово которое совпадает (если без него ответ будет просто да или нет)
+
+6. let twinkleStar = "Twinkle, twinkle, little star";
+let starRegex = /Twinkle/gi; // ключ g позваляет искать и выводить все совпадения!
+let result = twinkleStar.match(starRegex); // Change this line
+console.log(result)
+
+7. 
+
+
+
+
 
 // Раздел Обьектно ориентированного программирования
 
