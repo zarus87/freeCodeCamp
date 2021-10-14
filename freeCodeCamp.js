@@ -1164,7 +1164,27 @@ console.log(result)
 let alphabetRegex = /[a-z]/gi; // Если писать через пробел то будут перебираться все буквы от и до
 let result = quoteSample.match(alphabetRegex); // Change this line
 
-10
+10let quoteSample = "Blueberry 3.141592653s are delicious.";
+let myRegex = /[h-s2-6]/gi; // Change this line
+let result = quoteSample.match(myRegex); // Change this line
+console.log(result)
+
+11. let quoteSample = "3 blind mice.";
+let myRegex = /[^aeiou^0-9]/gi; // Change this line
+let result = quoteSample.match(myRegex); 
+
+12. let difficultSpelling = "Mississippi";
+let myRegex = /s+/g; // благодаря знаку + я могу искать двойные буквы, или все буквы которые есть
+let result = difficultSpelling.match(myRegex);
+console.log(result)
+
+13. // Only change code below this line
+let chewieRegex = /Aa*/; // Change this line
+// Only change code above this line
+
+let result = chewieQuote.match(chewieRegex);
+
+14.  
 
 
 
