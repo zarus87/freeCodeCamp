@@ -1151,8 +1151,20 @@ let starRegex = /Twinkle/gi; // ключ g позваляет искать и в
 let result = twinkleStar.match(starRegex); // Change this line
 console.log(result)
 
-7. 
+7. let exampleStr = "Let's have fun with regular expressions!";
+let unRegex = /.un/; // Change this line   символ "." соответсвует символу который я не знаю, но она будет искать все комбинации. а вместо "." любой символ
+let result = unRegex.test(exampleStr);
 
+8. let quoteSample = "Beware of bugs in the above code; I have only proved it correct, not tried it.";
+let vowelRegex = /[aeiou]/gi; // [] позваляют искать слова в которых есть такие буквы, если перед и за скобками стоят буквы которые должны точно совпасть
+let result = quoteSample.match(vowelRegex); // Change this line
+console.log(result)
+
+9. let quoteSample = "The quick brown fox jumps over the lazy dog.";
+let alphabetRegex = /[a-z]/gi; // Если писать через пробел то будут перебираться все буквы от и до
+let result = quoteSample.match(alphabetRegex); // Change this line
+
+10
 
 
 
