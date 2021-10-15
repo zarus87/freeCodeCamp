@@ -1170,7 +1170,7 @@ let result = quoteSample.match(myRegex); // Change this line
 console.log(result)
 
 11. let quoteSample = "3 blind mice.";
-let myRegex = /[^aeiou^0-9]/gi; // Change this line
+let myRegex = /[^aeiou^0-9]/gi; // наверное aeiou это все гласные в языке но это не точно!
 let result = quoteSample.match(myRegex); 
 
 12. let difficultSpelling = "Mississippi";
@@ -1179,13 +1179,28 @@ let result = difficultSpelling.match(myRegex);
 console.log(result)
 
 13. // Only change code below this line
-let chewieRegex = /Aa*/; // Change this line
+let chewieRegex = /Aa*/; // * искать подобные все буквы!
 // Only change code above this line
 
 let result = chewieQuote.match(chewieRegex);
 
-14.  
+14.  let text = "<h1>Winter is coming</h1>";
+let myRegex = /<.*?>/; // ленивое сопостовление, не особо понятно что это такое
+let result = text.match(myRegex);
+console.log(result)
 
+15. let reCriminals = /C+/; // Change this line
+console.log(reCriminals)
+
+16. let rickyAndCal = "Cal and Ricky both like racing.";
+let calRegex = /^Cal/; // находим слово в начале строки
+let result = calRegex.test(rickyAndCal);
+console.log(result)
+
+17. let caboose = "The last car on a train is the caboose";
+let lastRegex = /caboose$/; // находим слово в конце строки
+let result = lastRegex.test(caboose);
+console.log(result)
 
 
 
