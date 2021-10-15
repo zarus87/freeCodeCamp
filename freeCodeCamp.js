@@ -1242,7 +1242,29 @@ let ohRegex = /Oh{3,6}\sno/gi; // {} позваляет искать колич�
 let result = ohRegex.test(ohStr);
 console.log(result)
 
-26. 
+26. let haStr = "Hazzzzah";
+let haRegex = /Haz{4,}ah/; // если не указать одну цифру в скобках то она не будет учитывать либо нижний предел либо верхний
+let result = haRegex.test(haStr);
+
+27. let timStr = "Timmmmber";
+let timRegex = /Tim{4}ber/; // Если нету запитых в скобках, то мы указываем точное количество совпадений которое нам надо
+let result = timRegex.test(timStr);
+
+28. let favWord = "favorite";
+let favRegex = /favou?rite/; // ? при поиске точного совпадения может указать необязательность буквы перед которой он стоит, тут допустим разные английские британский и американский, и u не особо влияет, а смвсл слова один и тот же
+let result = favRegex.test(favWord);
+
+29. let sampleWord = "astronaut";
+let pwRegex = /(?=\w{6})(?=\w*\d{2})/; // длина слова 6 символов последние две только цифры
+let result = pwRegex.test(sampleWord);
+
+30. let myString = "Eleanor Roosevelt";
+let myRegex = /(Eleanor|Franklin *D.) Roosevelt/; // Change this line
+let result = myRegex.test(myString); // Change this line
+// After passing the challenge experiment with myString and see how the grouping works
+console.log(result)
+
+31.
 
 
 
