@@ -1170,7 +1170,7 @@ let result = quoteSample.match(myRegex); // Change this line
 console.log(result)
 
 11. let quoteSample = "3 blind mice.";
-let myRegex = /[^aeiou^0-9]/gi; // наверное aeiou это все гласные в языке но это не точно!
+let myRegex = /[^aeiou^0-9]/gi; // ^ позволяет находить всё крове того что за этим знаком, той есть как бы инверсия
 let result = quoteSample.match(myRegex); 
 
 12. let difficultSpelling = "Mississippi";
@@ -1201,6 +1201,49 @@ console.log(result)
 let lastRegex = /caboose$/; // находим слово в конце строки
 let result = lastRegex.test(caboose);
 console.log(result)
+
+18. let quoteSample = "The five boxing wizards jump quickly.";
+let alphabetRegexV2 = /\w/g; // \w подставляет все буквы и цифры и символы чтобы их искать
+let result = quoteSample.match(alphabetRegexV2).length; // здесь мы их считаем
+console.log(result)
+
+19. let quoteSample = "The five boxing wizards jump quickly.";
+let nonAlphabetRegex = /\W/gi; // заглавная буква позволяет искать инвертированые символы
+let result = quoteSample.match(nonAlphabetRegex).length;
+console.log(result)
+
+20. let movieName = "2001: A Space Odyssey";
+let numRegex = /\d/g; // позволяет находить все цифры 0-9
+let result = movieName.match(numRegex).length;
+console.log(result)
+
+21. let movieName = "2001: A Space Odyssey";
+let noNumRegex = /\D/gi; // находим всё что не является цифрами 0-9
+let result = movieName.match(noNumRegex).length;
+console.log(result)
+
+22. let username = "JackOfAllTrades";
+let userCheck = /^[a-z][a-z]+\d*$|^[a-z]\d\d+$/gi; // Это задача, её я скопировал с ответа)) так как не особо понял условия переведённые мною с английского
+let result = userCheck.test(username);
+console.log(result)
+
+23. let sample = "Whitespace is important in separating words";
+let countWhiteSpace = /\s/g; // этот патерн позваляет искать пробелы в выражении
+let result = sample.match(countWhiteSpace);
+console.log(result)
+
+24. let sample = "Whitespace is important in separating words";
+let countNonWhiteSpace = /\S/g; // заглавная буква S позваляет искать все непробельные символы
+let result = sample.match(countNonWhiteSpace);
+console.log(result) 
+
+25. let ohStr = "Ohhh no";
+let ohRegex = /Oh{3,6}\sno/gi; // {} позваляет искать количество совпадений буквы первая цифра от скольки, вторая до скольки(в примере исчем буквы h)
+let result = ohRegex.test(ohStr);
+console.log(result)
+
+26. 
+
 
 
 
