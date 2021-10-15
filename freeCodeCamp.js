@@ -1264,8 +1264,21 @@ let result = myRegex.test(myString); // Change this line
 // After passing the challenge experiment with myString and see how the grouping works
 console.log(result)
 
-31.
+31. let repeatNum = "42 42 42";
+let reRegex = /^(\d+)\s\1\s\1$/; // \1 это повторение искомого числа в этос лучае повторяем ещё два раза запись ^(\d+) итого в результате будет три повторения, третья это сама запись
+let result = reRegex.test(repeatNum);
+console.log(result)
 
+32. let str = "one two three";
+let fixRegex = /(\w+)\s(\w+)\s(\w+)/; // каждые скобки соответсвуют слову
+let replaceText = "$3 $2 $1"; //  меняем слова местами three two one
+let result = str.replace(fixRegex, replaceText);
+console.log(replaceText)
+
+33. let hello = "   Hello, World!  ";
+let wsRegex = /^\s+|\s+$/g; // Change this line
+let result = hello.replace(wsRegex, ""); // удаляем все прбелов до и после слов
+console.log(result)
 
 
 
