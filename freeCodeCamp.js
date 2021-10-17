@@ -1380,7 +1380,17 @@ console.log(matrix);
     console.log("Still going!");
   }
 }
+                                                   // Базовые структуры данных
 
+1. let yourArray = [4,6,42,"dfgdfgg", true]; // просто дописал массив с несколькими типами данных
+
+2. let myArray = ["a", "b", "c", "d"];
+// Only change code below this line
+myArray[1] = "fuck"                 // здесь я изменил значения массива таким оброзом!
+// Only change code above this line
+console.log(myArray);
+
+3. 
 
 
                                                     // Раздел Обьектно ориентированного программирования
