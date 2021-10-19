@@ -1116,7 +1116,27 @@ const arr = removeFirstTwo(source);
 const half = ({max, min}) => (max+min) /2;  //как параметры max и min попадают из константы stats попадают в  константу half совершенно не понятно!
 
 
-17.
+17.const result = {
+  success: ["max-length", "no-amd", "prefer-arrow-functions"],
+  failure: ["no-var", "var-on-top", "linebreak"],
+  skipped: ["no-extra-semi", "no-dup-keys"]
+};
+
+function makeList(arr) {
+  "use strict";
+  // Only change code below this line
+  const failureItems = [];
+  for (let i = 0; i < arr.length; i++) {
+    failureItems.push(`<li class="text-warning">${arr[i]}</li>`);
+  }
+     
+  // Only change code above this line
+
+  return failureItems;
+}
+
+const failuresList = makeList(result.failure);
+console.log(failuresList)
 
 18. const createPerson = (name, age, gender) =>( {
   // Only change code below this line
@@ -1254,7 +1274,6 @@ makeServerRequest.catch(error => {    //   .catch если промис не в�
   console.log(error);
 }); 
 
-32. 
 
 // Раздел Регулярные выражения
 
