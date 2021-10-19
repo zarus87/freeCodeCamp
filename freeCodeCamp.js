@@ -1167,10 +1167,94 @@ thermos.temperature = 26;
 temp = thermos.temperature; // 26 in Celsius
 console.log(temp)
 
-22.
+22. <html>
+  <body>
+    <!-- Only change code below this line -->
+<script type="module" src="index.js"></script>  // подключаем фва скрипт из внешнего файла
+    <!-- Only change code above this line -->
+  </body>
+</html>
 
+23. const uppercaseString = (string) => {
+  return string.toUpperCase();
+}
 
+const lowercaseString = (string) => {
+  return string.toLowerCase()
+}
+export {uppercaseString, lowercaseString};   // экспорт переменных в другой файл
 
+24.  import {uppercaseString, lowercaseString} from './string_functions.js'; // импорт из другого файла
+// Only change code above this line
+
+uppercaseString("hello");
+lowercaseString("WORLD!");
+
+25. import * as stringFunctions from './string_functions.js'  // импорт всего файла в одну переменную
+// Only change code above this line
+
+stringFunctions.uppercaseString("hello");
+stringFunctions.lowercaseString("WORLD!");
+
+26. export default function subtract(x, y) {   //экспортирование по умолчанию, можно использовать для одной вещи в файле, нельзя использовать для val let const
+  return x - y;
+}
+
+27.  import subtract from './math_functions.js'  // тоже импортиз файла
+// Only change code above this line
+
+subtract(7,4);
+
+28. const makeServerRequest = new Promise((resolve, reject) => {   // обещания или промисы, сначала значение если правда потом значение если ложь
+
+});
+
+29. const makeServerRequest = new Promise((resolve, reject) => {
+  // responseFromServer represents a response from a server
+  let responseFromServer;
+    
+  if(responseFromServer) {
+    resolve('We got the data');// строка которая выводитсья когда промив истинный
+  } else {  
+    reject("Data not received");// строка когда промис ложный
+  }
+});
+
+30. const makeServerRequest = new Promise((resolve, reject) => {
+  // responseFromServer is set to true to represent a successful response from a server
+  let responseFromServer = true;
+    
+  if(responseFromServer) {
+    resolve("We got the data");
+  } else {  
+    reject("Data not received");
+  }
+});
+
+makeServerRequest.then(result => {   //метод для мгновенного использования  при положительном ответе промиса  нужно писать .then если ответ положительный
+  console.log(result)
+});
+
+31. const makeServerRequest = new Promise((resolve, reject) => {
+  // responseFromServer is set to false to represent an unsuccessful response from a server
+  let responseFromServer = false;
+    
+  if(responseFromServer) {
+    resolve("We got the data");
+  } else {  
+    reject("Data not received");
+  }
+});
+
+makeServerRequest.then(result => {
+  console.log(result);
+});
+
+makeServerRequest.catch(error => {    //   .catch если промис не выполнен
+  console.log(error);
+}); 
+
+32. 
 
 // Раздел Регулярные выражения
 
