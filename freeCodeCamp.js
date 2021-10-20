@@ -966,6 +966,42 @@ cc(2); cc(3); cc(7); cc('K'); cc('A');
   95. 
 
 
+  100. function convertToInteger(str) {
+    return parseInt(str);                  //ParseInt преобразует в целое число
+    }
+    
+    convertToInteger("56");
+    console.log(convertToInteger)
+
+  101. function convertToInteger(str) {
+    return parseInt (str,2);     //можно преобразовавыть из системы счисления одной в другую. желаемая сисстема счисления указывается через запятую после числа
+    }
+    
+    convertToInteger("10011");
+    console.log(convertToInteger)
+
+  102. function checkEqual(a, b) {
+    return a===b ? "Equal" : "Not Equal";  // здесь нужно строгое равенство именно три с одним не возвращает ответ "нет"
+    }
+    
+    checkEqual(1, 2);
+    console.log(checkEqual)
+
+  103.; function checkSign(num) {
+  return (num > 0) ? "positive" 
+  : (num < 0) ? "negative"
+   : "zero";                               // этот код реально не работает в браузере,, но задание правильно считается в кодкэмпе
+  }
+    checkSign(10);
+  104.
+
+
+
+
+
+
+
+
   // Раздел ES6
 
   
