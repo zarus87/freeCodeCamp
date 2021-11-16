@@ -1518,4 +1518,11 @@ console.log(result)
   }
   let hound = new Dog()
 
-  7. 
+  7. function Dog(name, color) {
+    this.name = name;
+    this.color = color;
+    this.numLegs = 4;
+    }
+    
+    let terrier = new Dog("zxx","qwe");
+    console.log(terrier)
