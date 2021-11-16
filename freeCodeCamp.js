@@ -1526,3 +1526,35 @@ console.log(result)
     
     let terrier = new Dog("zxx","qwe");
     console.log(terrier)
+
+    8. function House(numBedrooms) {
+      this.numBedrooms = numBedrooms;
+    }
+     let myHouse = new House(4);
+    
+     myHouse instanceof House   // instanceof проверяет является ли myHouse изменёным элементом House
+
+     9. function Bird(name) {
+      this.name = name;
+      this.numLegs = 2;
+    }
+    
+    let canary = new Bird("Tweety");
+    let ownProps = [];
+    
+    for (let property in canary) {
+      if(canary.hasOwnProperty(property)) {     // этот код позваляет передать в массив все своисва переменноой canary
+        ownProps.push(property);
+      }
+    }
+
+    10.   function Dog(name) {
+      this.name = name;
+    }
+    
+    Dog.prototype.numLegs = 4;   // в этой строке добавляем свойства обьекту Dog
+    
+
+    let beagle = new Dog("Snoopy");
+
+    11. 
