@@ -1557,4 +1557,24 @@ console.log(result)
 
     let beagle = new Dog("Snoopy");
 
-    11. 
+    11.   function Dog(name) {
+      this.name = name;
+    }
+    
+    Dog.prototype.numLegs = 4;
+    
+    let beagle = new Dog("Snoopy");
+    
+    let ownProps = [];
+    let prototypeProps = [];
+    
+    for (let property in beagle) {
+      if(beagle.hasOwnProperty(property)) {    // добавялем все свойства beagle хз куда
+        ownProps.push(property);
+      } else {
+        prototypeProps.push(property);
+      }
+    }
+  
+
+  12.  
