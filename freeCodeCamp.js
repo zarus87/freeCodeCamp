@@ -1577,4 +1577,19 @@ console.log(result)
     }
   
 
-  12.  
+  12.  function Dog(name) {
+    this.name = name;
+  }
+  
+  
+  function joinDogFraternity(candidate) {
+  if (candidate.constructor === Dog) {                // с помощью .construсtor проверяем является ли точное соответсвие candidate === Dog
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  13.   
+  
+
