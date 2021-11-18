@@ -1590,6 +1590,20 @@ console.log(result)
     }
   }
 
-  13.   
+  13.   function Dog(name) {
+    this.name = name;
+  }
   
+  Dog.prototype = {                          // устанавливаем несколько свойств к обьекту Dog за один раз
+    
+  numLegs: 2, 
+    eat: function() {
+      console.log("nom nom nom");
+    },
+    describe: function() {
+      console.log("My name is " + this.name);
+    }
+  };
+  
+  14. 
 
