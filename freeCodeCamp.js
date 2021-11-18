@@ -1605,5 +1605,35 @@ console.log(result)
     }
   };
   
-  14. 
+  14. function Dog(name) {
+    this.name = name;
+  }
+  
+  
+  Dog.prototype = {
+    constructor: Dog,         // чтобы в будущем нельзя было сменить имя, мы определяем его этим свойством, или что-то в этом роде )
+    numLegs: 4,
+    eat: function() {
+      console.log("nom nom nom");
+    },
+    describe: function() {
+      console.log("My name is " + this.name);
+    }
+  };
+
+  15. function Dog(name) {
+    this.name = name;
+  }
+  let beagle = new Dog("Snoopy");
+  Dog.prototype.isPrototypeOf(beagle);   // с помощью isPrototypeOf проверяем что beagle это изменёный Dog
+
+  16. function Dog(name) {
+    this.name = name;
+  }
+  let beagle = new Dog("Snoopy");
+  Dog.prototype.isPrototypeOf(beagle);  
+  Object.isPrototypeOf(Dog.prototype);  
+
+  17. 
+  
 
