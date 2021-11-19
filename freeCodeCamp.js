@@ -1625,7 +1625,7 @@ console.log(result)
     this.name = name;
   }
   let beagle = new Dog("Snoopy");
-  Dog.prototype.isPrototypeOf(beagle);   // с помощью isPrototypeOf проверяем что beagle это изменёный Dog
+  Dog.prototype.isPrototypeOf(beagle);   // с помощью isPrototypeOf проверяем что beagle это изменёный Dog.
 
   16. function Dog(name) {
     this.name = name;
