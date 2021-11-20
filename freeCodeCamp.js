@@ -238,11 +238,11 @@ myArray.unshift(["Paul",35]);
     
     functionWithArgs(3,4);
 
-    49. var myGlobal = 10;// Declare the myGlobal variable below this line
+    49. var myGlobal = 10;// Declare the myGlobal variable below this line.
 
 
     function fun1() {
-      oopsGlobal = 5// Assign 5 to oopsGlobal Here
+      oopsGlobal = 5// Assign 5 to oopsGlobal Here.
     
     }
     
