@@ -1634,6 +1634,29 @@ console.log(result)
   Dog.prototype.isPrototypeOf(beagle);  
   Object.isPrototypeOf(Dog.prototype);  
 
-  17. 
+  17. function Cat(name) {
+    this.name = name;
+  }
+  
+  Cat.prototype = {
+    constructor: Cat,
+  
+  };
+  
+  function Bear() { }
+  
+  Bear.prototype = {
+    constructor: Bear,
+   
+  };
+  
+  function Animal() { }
+  
+  Animal.prototype = {
+    constructor: Animal,
+  eat: function () {        // добавил тут  типа чтобы не повторяться что-то
+    console.log("ho-ho-ho")
+  }
+  };
   
 
