@@ -1654,7 +1654,7 @@ console.log(result)
   
   Animal.prototype = {
     constructor: Animal,
-  eat: function () {        // добавил тут  типа чтобы не повторяться что-то
+  eat: function () {        // добавил тут  типа чтобы не повторяться что-то.
     console.log("ho-ho-ho")
   }
   };
