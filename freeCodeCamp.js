@@ -1683,4 +1683,29 @@ console.log(result)
    let beagle = new Dog();
    Dog.prototype = Object.create(Animal.prototype);  // все Dog наследуют свойства Animal
 
-   20.
+   20.  function Animal() { }
+   function Bird() { }
+   function Dog() { }
+   
+   Bird.prototype = Object.create(Animal.prototype);
+   Dog.prototype = Object.create(Animal.prototype);
+   
+   // Only change code below this line
+   Bird.prototype.constructor = Bird;    // меняю своиство прототипа вручную
+   Dog.prototype.constructor = Dog;
+   
+   let duck = new Bird();
+   let beagle = new Dog();
+
+   21. function Animal() { }
+   Animal.prototype.eat = function() { console.log("nom nom nom"); };
+   function Dog() { }
+   Dog.prototype = Object.create(Animal.prototype);
+   Dog.prototype.constructor = Dog;
+   
+   Dog.prototype.bark = function() {
+     console.log("Woof!");
+   };
+   let beagle = new Dog();
+
+   22. 
