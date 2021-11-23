@@ -1659,4 +1659,28 @@ console.log(result)
   }
   };
   
+   18.   function Animal() { }
 
+   Animal.prototype = {
+     constructor: Animal,
+     eat: function() {
+       console.log("nom nom nom");
+     }
+   };
+   let duck = Object.create(Animal.prototype);    // создаю обьект и даю ему свойства прототипа, с наследованием
+   let beagle = Object.create(Animal.prototype);
+
+   19. function Animal() { }
+
+   Animal.prototype = {
+     constructor: Animal,
+     eat: function() {
+       console.log("nom nom nom");
+     }
+   };
+   
+   function Dog() { }
+   let beagle = new Dog();
+   Dog.prototype = Object.create(Animal.prototype);  // все Dog наследуют свойства Animal
+
+   20.
