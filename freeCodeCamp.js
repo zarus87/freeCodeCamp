@@ -1753,4 +1753,17 @@ console.log(result)
     console.log("A cozy nest is ready");
   })();                                  //синтаксис немедленно вызываемой ананимной функции
 
-  26. 
+  26. let funModule = (function () {
+    return{
+     isCuteMixin : function(obj) {
+    obj.isCute = function() {
+      return true;
+    };
+  },
+      singMixin : function(obj) {
+    obj.sing = function() {
+      console.log("Singing to an awesome tune");
+      };
+      }
+  };
+  })();
