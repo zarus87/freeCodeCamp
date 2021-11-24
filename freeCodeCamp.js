@@ -1725,4 +1725,32 @@ console.log(result)
    let penguin = new Penguin();
    console.log(penguin.fly());
 
-   23. 
+   23. let bird = {
+    name: "Donald",
+    numLegs: 2
+  };
+  
+  let boat = {
+    name: "Warrior",
+    type: "race-boat"
+  };
+  
+  // Only change code below this line
+  let glideMixin = function(obj) {     //связываю две переменные одним свойством с помощью Mixin
+    obj.glide = function() {
+     
+    }
+  };
+  glideMixin(bird);
+  glideMixin(boat);
+
+  24. function Bird() {
+    let weight = 15
+    this.getWeight = () => weight; //применя. замыкание чтобы защитить weight от прямого переназначения
+  }
+
+  25. (function () {
+    console.log("A cozy nest is ready");
+  })();                                  //синтаксис немедленно вызываемой ананимной функции
+
+  26. 
