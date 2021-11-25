@@ -1473,6 +1473,137 @@ let result = hello.replace(wsRegex, ""); // удаляем все прбелов
 console.log(result)
 
 
+  // Раздел Отладка
+
+  1. let a = 5;
+  console.log(a) // учимся подставлять console.log там где нам надо посмотреть результат
+  let b = 1;
+  a++;
+  let sumAB = a + b;
+  console.log(sumAB);
+  
+  2. let output = "Get this to show once in the freeCodeCamp console and not at all in the browser console";
+  console.log(output)  // какая-то разница в консолях сайта и браузера. непонятно
+  console.clear()
+  
+  3. let seven = 7;
+  let three = "3";
+  console.log(typeof three);
+  console.log(typeof seven);// проверка типа данных с которыми имеем дело!
+  
+  4. let receivables = 10;
+  let payables = 8;
+  let netWorkingCapital = receivables - payables;
+  console.log(`Net working capital is: ${netWorkingCapital}`);// исправлены две ошибки в переменных чтобы всё работало )
+  
+  5. let myArray = [1, 2, 3];
+  let arraySum = myArray.reduce((previous, current) =>  previous + current);
+  console.log(`Sum of array values is: ${arraySum}`);  // исправлены некоторые ошибки в написании чтобы код работал!
+  
+  6. let innerHtml = "<p>Click here to <a href='#Home'>return home</a></p>"; // одинарные и двойные ковычки и использование их в одной строке
+  console.log(innerHtml);
+  
+  7. let x = 7;
+  let y = 9;
+  let result = "to come";
+  
+  if(x == y) {             // здесь мы добавили двойное равно, ведь если его нету то цикл else никогда не будет выполняться
+    result = "Equal!";
+  } else {
+    result = "Not equal!";
+  }
+  
+  console.log(result);
+  
+  8. function getNine() {
+    let x = 6;
+    let y = 3;
+    return x + y;
+  }
+  
+  let result = getNine();  // здесь после названия функции забыли написать скобки! и переменная не воспринимало это как функцию
+  console.log(result);
+  
+  9. function raiseToPower(b, e) {
+    return Math.pow(b, e);
+  }
+  
+  let base = 2;
+  let exp = 3;
+  let power = raiseToPower(base, exp); // здесь была неправильная последовательность передачи значений в функцию, и как следствие ответ был не тот который ждали
+  console.log(power);
+  
+  10. function countToFive() {
+    let firstFive = "12345";
+    let len = firstFive.length;
+    // Only change code below this line
+    for (let i = 0; i < len; i++) {    // здесь была ошибка знаков и цифр функцию стартовала с 1 а не с 0 как положено и выполняла на 1 обход больше чем должна из за знака =
+      console.log(firstFive[i]);
+    }
+  }
+  countToFive();
+  
+  11. function zeroArray(m,n) {  
+    // Creates a 2-D array with m rows and n columns of zeroes
+    let newArray = [];
+   
+    for (let i = 0; i < m; i++) {
+      // Adds the m-th row into newArray
+   let row = [];                                // здесь я должен был понять что переменная должна быть внутри цикла, а она юыла снаружи. не понял этого
+      for (let j = 0; j < n; j++) {
+        // Pushes n zeroes into the current row to create the columns
+        row.push(0);
+      }
+     
+      // Pushes the current row, which now has n zeroes in it, to the array
+      newArray.push(row);
+      
+    }
+     
+    return newArray;
+  }
+  
+  let matrix = zeroArray(4,3);
+  console.log(matrix);
+  
+  12. function myFunc() {
+    for (let i = 1; i <= 4; i += 2) {    // изменил знак ! на < чтобы получить конечный цикл а не бесконечный
+      console.log("Still going!");
+    }
+  }
+
+
+
+
+
+// Раздел базовые структуры даных
+
+1. let yourArray = [4,6,42,"dfgdfgg", true]; // просто дописал массив с несколькими типами данных
+
+2. let myArray = ["a", "b", "c", "d"];
+// Only change code below this line
+myArray[1] = "fuck"                 // здесь я изменил значения массива таким оброзом!
+// Only change code above this line
+console.log(myArray);
+
+3. function mixedNumbers(arr) {
+  // Only change code below this line
+arr.unshift('I',2, 'three');        // доюовление в начало массива
+arr.push(7, 'VIII', 9);             // добавление в конец массива
+  // Only change code above this line
+  return arr;
+}
+4.   
+
+
+
+
+
+
+
+
+
+
 
 // Раздел Обьектно ориентированного программирования
 
@@ -1767,3 +1898,14 @@ console.log(result)
       }
   };
   })();
+
+
+  function mixedNumbers(arr) {
+    // Only change code below this line
+  arr.unshift('I',2, 'three');
+  arr.push(7, 'VIII', 9);
+    // Only change code above this line
+    return arr;
+  }
+  
+  console.log(mixedNumbers(['IV', 5, 'six']));
