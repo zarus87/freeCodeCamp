@@ -1581,19 +1581,21 @@ console.log(result)
 1. let yourArray = [4,6,42,"dfgdfgg", true]; // просто дописал массив с несколькими типами данных
 
 2. let myArray = ["a", "b", "c", "d"];
-// Only change code below this line
 myArray[1] = "fuck"                 // здесь я изменил значения массива таким оброзом!
-// Only change code above this line
 console.log(myArray);
 
 3. function mixedNumbers(arr) {
-  // Only change code below this line
-arr.unshift('I',2, 'three');        // доюовление в начало массива
+arr.unshift('I',2, 'three');        // добавление в начало массива
 arr.push(7, 'VIII', 9);             // добавление в конец массива
-  // Only change code above this line
   return arr;
 }
-4.   
+
+4.  function popShift(arr) {
+  let popped = arr.pop(); // добавляю последний элемент
+  let shifted = arr.shift(); // добавляю первый элемент
+  return [shifted, popped];
+}
+console.log(popShift(['challenge', 'is', 'not', 'complete']));  
 
 
 
@@ -1821,6 +1823,7 @@ arr.push(7, 'VIII', 9);             // добавление в конец мас
    Bird.prototype = Object.create(Animal.prototype);
    Dog.prototype = Object.create(Animal.prototype);
    
+   // Only change code below this line
    Bird.prototype.constructor = Bird;    // меняю своиство прототипа вручную
    Dog.prototype.constructor = Dog;
    
@@ -1846,9 +1849,11 @@ arr.push(7, 'VIII', 9);             // добавление в конец мас
    Penguin.prototype = Object.create(Bird.prototype);
    Penguin.prototype.constructor = Penguin;
    
+   // Only change code below this line
    Penguin.prototype.fly = function() {
      return "Alas, this is a flightless bird.";  // изменяю унаследованые свойства
    };
+   // Only change code above this line
    
    let penguin = new Penguin();
    console.log(penguin.fly());
@@ -1863,6 +1868,7 @@ arr.push(7, 'VIII', 9);             // добавление в конец мас
     type: "race-boat"
   };
   
+  // Only change code below this line
   let glideMixin = function(obj) {     //связываю две переменные одним свойством с помощью Mixin
     obj.glide = function() {
      
@@ -1894,3 +1900,14 @@ arr.push(7, 'VIII', 9);             // добавление в конец мас
       }
   };
   })();
+
+
+  function mixedNumbers(arr) {
+    // Only change code below this line
+  arr.unshift('I',2, 'three');
+  arr.push(7, 'VIII', 9);
+    // Only change code above this line
+    return arr;
+  }
+  
+  console.log(mixedNumbers(['IV', 5, 'six']));
