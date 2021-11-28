@@ -1597,6 +1597,15 @@ arr.push(7, 'VIII', 9);             // добавление в конец мас
 }
 console.log(popShift(['challenge', 'is', 'not', 'complete']));  
 
+5. const arr = [2, 4, 5, 1, 7, 5, 2, 1];
+// Only change code below this line
+arr.splice(2,2);  // splice позваляет удалять из массива первая цифра это с какой цифры начнётся удаление вторая сколько цифр будет удалено
+arr.splice(1,2);
+// Only change code above this line
+console.log(arr);
+
+6.  
+
 
 
 
