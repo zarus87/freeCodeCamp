@@ -1598,13 +1598,24 @@ arr.push(7, 'VIII', 9);             // добавление в конец мас
 console.log(popShift(['challenge', 'is', 'not', 'complete']));  
 
 5. const arr = [2, 4, 5, 1, 7, 5, 2, 1];
-// Only change code below this line
 arr.splice(2,2);  // splice позваляет удалять из массива первая цифра это с какой цифры начнётся удаление вторая сколько цифр будет удалено
 arr.splice(1,2);
-// Only change code above this line
 console.log(arr);
 
-6.  
+6.  function htmlColorNames(arr) {
+const startIndex = 0;     // добавляю переменную с которой начнётся удаление
+const amountDelete = 2;   // добавляю переменную в которой указываю сколько элементов будет удалено
+arr.splice(startIndex, amountDelete, 'DarkSalmon', 'BlanchedAlmond');   // указываю эти элементы и то что хочу добавить с начала удаления
+  return arr;
+}
+console.log(htmlColorNames(['DarkGoldenRod', 'WhiteSmoke', 'LavenderBlush', 'PaleTurquoise', 'FireBrick']));
+
+7.  function forecast(arr) {
+  return arr.slice(2,4);   //позваляет извлекать из массива нужное первая цифра откуда начинается вторая на которой заканчивается но не включая эту цифру
+}
+console.log(forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']));
+
+8. 
 
 
 
