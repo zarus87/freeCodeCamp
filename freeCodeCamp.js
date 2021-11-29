@@ -1615,9 +1615,24 @@ console.log(htmlColorNames(['DarkGoldenRod', 'WhiteSmoke', 'LavenderBlush', 'Pal
 }
 console.log(forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']));
 
-8. 
+8. function copyMachine(arr, num) {
+  let newArr = [];
+  while (num >= 1) {  
+newArr.push([...arr]);   // копирование всего массива два раза
+    num--;
+  }
+  return newArr;
+}
+console.log(copyMachine([true, false, true], 2));
 
+9. function spreadOut() {
+  let fragment = ['to', 'code'];
+  let sentence = ['learning', ...fragment, 'is', 'fun']; // использую метод ... чтобы обьединять массивы
+  return sentence;
+}
+console.log(spreadOut());
 
+10.  
 
 
 
