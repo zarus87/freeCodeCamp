@@ -1632,7 +1632,15 @@ console.log(copyMachine([true, false, true], 2));
 }
 console.log(spreadOut());
 
-10.  
+10.  function quickCheck(arr, elem) {
+if (arr.indexOf(elem) >= 0) {
+    return true;
+  }
+  return false;
+}
+console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));
+
+11.  
 
 
 
