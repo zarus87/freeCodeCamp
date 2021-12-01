@@ -1451,9 +1451,8 @@ let pwRegex = /(?=\w{6})(?=\w*\d{2})/; // длина слова 6 символо
 let result = pwRegex.test(sampleWord);
 
 30. let myString = "Eleanor Roosevelt";
-let myRegex = /(Eleanor|Franklin *D.) Roosevelt/; // Change this line
-let result = myRegex.test(myString); // Change this line
-// After passing the challenge experiment with myString and see how the grouping works
+let myRegex = /(Eleanor|Franklin *D.) Roosevelt/;
+let result = myRegex.test(myString); 
 console.log(result)
 
 31. let repeatNum = "42 42 42";
@@ -1468,7 +1467,7 @@ let result = str.replace(fixRegex, replaceText);
 console.log(replaceText)
 
 33. let hello = "   Hello, World!  ";
-let wsRegex = /^\s+|\s+$/g; // Change this line
+let wsRegex = /^\s+|\s+$/g; 
 let result = hello.replace(wsRegex, ""); // удаляем все прбелов до и после слов
 console.log(result)
 
