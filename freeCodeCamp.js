@@ -1947,3 +1947,47 @@ console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));
   }
   
   console.log(mixedNumbers(['IV', 5, 'six']));
+
+
+
+  // Функциональное програмирование
+
+
+  1.    const prepareTea = () => 'greenTea';
+  
+  const getTea = (numOfCups) => {
+    const teaCups = [];
+  
+    for(let cups = 1; cups <= numOfCups; cups += 1) {
+      const teaCup = prepareTea();
+      teaCups.push(teaCup);
+    }
+    return teaCups;
+  };
+
+   const tea4TeamFCC = getTea(40);                 // вызываем 40 чашек чая
+  
+
+2.  const prepareGreenTea = () => 'greenTea';
+
+const prepareBlackTea = () => 'blackTea';
+
+const getTea = (prepareTea, numOfCups) => {
+  const teaCups = [];
+
+  for(let cups = 1; cups <= numOfCups; cups += 1) {
+    const teaCup = prepareTea();
+    teaCups.push(teaCup);
+  }
+  return teaCups;
+};
+
+const tea4GreenTeamFCC = getTea(prepareGreenTea, 27);   //вызываю 27 чашек зелёного чая, указывая уже конкрентую переменую  prepareGreenTea
+const tea4BlackTeamFCC = getTea(prepareBlackTea,13);     // здесь уже чёрный чай и 13 чашек
+
+console.log(
+  tea4GreenTeamFCC,
+  tea4BlackTeamFCC
+);\
+
+3. 
