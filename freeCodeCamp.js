@@ -993,8 +993,33 @@ cc(2); cc(3); cc(7); cc('K'); cc('A');
    : "zero";                               // этот код реально не работает в браузере,, но задание правильно считается в кодкэмпе
   }
     checkSign(10);
-  104.
 
+
+  104.  
+  function countdown(n){
+    if (n < 1) {
+    return [];
+    } else {
+      const countArray = countdown(n-1);    
+      countArray.unshift(n);     // использую unshift для того чтобы перевернуть массив сзади наперёд
+      return countArray;
+    } 
+  }
+  console.log(countdown(10));
+   
+  105.  
+  function rangeOfNumbers(startNum, endNum) { 
+    if (endNum - startNum === 0) {
+    return [startNum];
+    } else {
+      var countArray = rangeOfNumbers(startNum,endNum-1);     //возращаю с помощьб рекурсии массив чисел от и до заданных чисел
+      countArray.push(endNum);     
+  return countArray;
+    }
+};
+console.log (rangeOfNumbers(6, 9))
+
+106. 
 
 
 
@@ -1654,7 +1679,7 @@ console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));
 
 console.log(filteredArray([[3, 2, 3], [1, 6, 3], [3, 13, 26], [19, 3, 9]], 3));
 
-
+12.  
 
 
 
