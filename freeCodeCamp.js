@@ -1,145 +1,124 @@
 //В этом файле указаны все мои решения в курсу "JavaScript алгоритмы и структуры данных" на freeCodeCamp!
 
 
-1.
-// Это первый вид комментария 
+1.// Это первый вид комментария 
 /*Это второй вид комментария */
 
-2. 
-var myName;
+2. var myName;
 
-3.
-var a;
+3.var a;
 a = 7;
 
-4.
-var a;
+4.var a;
 a = 7;
 var b;
 b = a;
 
-5. 
-var a = 9;
+5. var a = 9;
 
-6.
-var myFirstName ;
-myFirstName= 'Kirill';
-var myLastName;
-myLastName = "Krukouski";
-
-7. 
-var a = 5;
+6. var a = 5;
 var b = 10;
 var c = "I am a";
+// Only change code above this line
+
 a = a + 1;
 b = b + 5;
 c = c + " String!";
 
-8.
-var studlyCapVar;
+7. var studlyCapVar;
 var properCamelCase;
 var titleCaseOver;
+
+// Variable assignments
 studlyCapVar = 10;
 properCamelCase = "A String";
 titleCaseOver = 9000;
 
-9.
-let catName = "Oliver";
-let catSound = "Meow!";
+8. var sum = 10 + 10;
 
-10.
-const FCC = "freeCodeCamp";
-let fact = "is cool!";
-fact = "is awesome!";
-console.log(FCC, fact);
+9. var difference = 45 - 33;
 
-11.
-var sum = 10 + 10;
+10. var product = 8 * 10;
 
-12. 
-var difference = 45 - 33;
+11. var quotient = 66 / 33;
 
-13.
-var product = 8 * 10;
+12. var myVar = 87;
 
-14. 
-var quotient = 66 / 33;
-
-15.
-var myVar = 87;
+// Only change code below this line
 myVar++;
 
-16. 
-var myVar = 11;
+13. var myVar = 11;
+
+// Only change code below this line
 myVar--;
 
-17. 
-var myDecimal = 5.7;
+14. var myDecimal = 5.7;
 
-18.
-var product = 2.5 * 2.0;
+15. var product = 2.5 * 2.0;
 
-19.
-var quotient = 4.4 / 2.0;
+16. var quotient = 4.4 / 2.0; // Change this line
 
-20.
-var remainder = 11 % 3;
+17. var remainder = 11 % 3;
 
-21.
-var a = 3;
+18. var a = 3;
 var b = 17;
 var c = 12;
+
+// Only change code below this line
 a += 12;
 b += 9;
 c += 7;
 
-22.
-var a = 11;
+19. var a = 11;
 var b = 9;
 var c = 3;
+
+// Only change code below this line
 a -= 6;
 b -= 15;
 c -= 1;
 
-23.
-var a = 5;
+20. var a = 5;
 var b = 12;
 var c = 4.6;
+
+// Only change code below this line
 a *= 5;
 b *= 3;
 c *= 10;
 
-24. 
-var a = 48;
+21. var a = 48;
 var b = 108;
 var c = 33;
+
+// Only change code below this line
 a /= 12;
 b /= 4;
 c /= 11;
 
-25.
-var myStr = "I am a \"double quoted\" string inside \"double quotes\"."; 
+22. var myFirstName = 'Кирилл';
+var myLastName = 'Круковский';
 
-26.
-var myStr = '<a href="http://www.example.com" target="_blank">Link</a>';
+23. var myStr = "I am a \"double quoted\" string inside \"double quotes\"."; // Change this line
 
-27.
-var myStr = "FirstLine\n\t\\SecondLine\nThirdLine"
+24. var myStr = '<a href="http://www.example.com" target="_blank">Link</a>';
 
-28.
-var myStr = "This is the start. " + "This is the end." 
+25. var myStr = "FirstLine\n\t\\SecondLine\nThirdLine"// Change this line
+
+26. var myStr = "This is the start. " + "This is the end." 
 console.log(myStr);
+// Change this line
 
-29. 
+27. // Only change code below this line
+
 var myStr = "This is the first sentence. ";
 myStr += "This is the second sentence."
 
-30.
+28. // Only change code below this line
 var myName = "Кирилл";
 var myStr = "My name is " + myName + " and I am well";
 
-31.
-var someAdjective = "qwe";
+29. var someAdjective = "qwe";
 var myStr = "Learning to code is ";
 myStr += someAdjective;
 
@@ -373,7 +352,7 @@ return "No, that was false";
 
 }
 
-58. // Setup
+52. // Setup
 function testEqual(val) {
   if (val == 12) { // Change this line
     return "Equal";
@@ -383,7 +362,7 @@ function testEqual(val) {
 
 testEqual(10);
 
-59. // Setup
+53. // Setup
 function testStrict(val) {
   if (val === 7) { // Change this line
     return "Equal";
@@ -393,7 +372,7 @@ function testStrict(val) {
 
 testStrict(10);
 
-60. // Setup
+54. // Setup
 function compareEquality(a, b) {
   if (a === b) { // Change this line
     return "Equal";
@@ -403,7 +382,7 @@ function compareEquality(a, b) {
 
 compareEquality(10, "10");
 
-61. // Setup
+55. // Setup
 function testNotEqual(val) {
   if (val != 99) { // Change this line
     return "Not Equal";
@@ -413,7 +392,7 @@ function testNotEqual(val) {
 
 testNotEqual(10);
 
-62. // Setup
+56. // Setup
 function testStrictNotEqual(val) {
   if (val !== 17) { // Change this line
     return "Not Equal";
@@ -423,7 +402,7 @@ function testStrictNotEqual(val) {
 
 testStrictNotEqual(10);
 
-63. function testGreaterThan(val) {
+57. function testGreaterThan(val) {
   if (val > 100) {  // Change this line
     return "Over 100";
   }
@@ -437,7 +416,7 @@ testStrictNotEqual(10);
 
 testGreaterThan(10);
 
-64. function testGreaterOrEqual(val) {
+58. function testGreaterOrEqual(val) {
   if (val >= 20) {  // Change this line
     return "20 or Over";
   }
@@ -451,7 +430,7 @@ testGreaterThan(10);
 
 testGreaterOrEqual(10);
 
-65. function testLessThan(val) {
+59. function testLessThan(val) {
   if (val < 25) {  // Change this line
     return "Under 25";
   }
@@ -465,7 +444,7 @@ testGreaterOrEqual(10);
 
 testLessThan(10);
 
-66. function testLessOrEqual(val) {
+60. function testLessOrEqual(val) {
   if (val <= 12) {  // Change this line
     return "Smaller Than or Equal to 12";
   }
@@ -479,7 +458,7 @@ testLessThan(10);
 
 testLessOrEqual(10);
 
-67. function testLogicalAnd(val) {
+61. function testLogicalAnd(val) {
   // Only change code below this line
 
   
@@ -494,7 +473,7 @@ testLessOrEqual(10);
 
 testLogicalAnd(10);
 
-68. function testLogicalOr(val) {
+62. function testLogicalOr(val) {
   // Only change code below this line
 
   
@@ -509,7 +488,7 @@ testLogicalAnd(10);
 
 testLogicalOr(15);
 
-69. function testElse(val) {
+63. function testElse(val) {
   var result = "";
   // Only change code below this line
 
@@ -527,7 +506,7 @@ testLogicalOr(15);
 
 testElse(4);
 
-70. function testElseIf(val) {
+64. function testElseIf(val) {
   if (val > 10) {
     return "Greater than 10";
   }
@@ -541,7 +520,7 @@ testElse(4);
 
 testElseIf(5);
 
-71. function orderMyLogic(val) {
+65. function orderMyLogic(val) {
   if (val < 5) {
     return "Less than 5";
   } else if (val < 10) {
@@ -553,7 +532,7 @@ testElseIf(5);
 
 orderMyLogic(7);
 
-72. function testSize(num) {
+66. function testSize(num) {
   // Only change code below this line
 if (num <5) {
   return "Tiny"
@@ -571,7 +550,7 @@ if (num <5) {
   // Only change code above this line
 }
 
-73. var names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
+67. var names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
 function golfScore(par, strokes) {
   // Only change code below this line
 if (strokes == 1) {
@@ -597,7 +576,7 @@ if (strokes == 1) {
 
 golfScore(5, 4);
 
-74.  
+68.  
 function caseInSwitch(val) {
   var answer = "";
   // Only change code below this line
@@ -623,7 +602,7 @@ break;
 
 caseInSwitch(1);
 
-75. function switchOfStuff(val) {
+69. function switchOfStuff(val) {
   var answer = "";
   // Only change code below this line
 switch (val){
@@ -648,7 +627,7 @@ switch (val){
 
 switchOfStuff(1);
 
-76. function sequentialSizes(val) {
+70. function sequentialSizes(val) {
   var answer = "";
   // Only change code below this line
 switch (val){
@@ -676,7 +655,7 @@ switch (val){
 
 sequentialSizes(1);
 
-77. function chainToSwitch(val) {
+71. function chainToSwitch(val) {
   var answer = "";
   // Only change code below this line
 
@@ -703,7 +682,7 @@ sequentialSizes(1);
 
 chainToSwitch(7);
 
-78. function isLess(a, b) {
+72. function isLess(a, b) {
   // Only change code below this line
   
     return a < b;
@@ -713,7 +692,7 @@ chainToSwitch(7);
 
 isLess(10, 15);
 
-79. // Setup
+73. // Setup
 function abTest(a, b) {
   // Only change code below this line
 if (a<0 || b<0){
@@ -728,7 +707,7 @@ if (a<0 || b<0){
 
 abTest(2,2);
 
-80. var count = 0;
+74. var count = 0;
 
 function cc(card) {
   // Only change code below this line
@@ -758,7 +737,7 @@ if (count > 0){
 
 cc(2); cc(3); cc(7); cc('K'); cc('A');
 
-81. var myDog = {
+75. var myDog = {
   // Only change code below this line
   "name" : "asd",
   "legs" : 4,
@@ -768,7 +747,7 @@ cc(2); cc(3); cc(7); cc('K'); cc('A');
   // Only change code above this line
   };
 
-  82. // Setup
+  76. // Setup
   var testObj = {
     "hat": "ballcap",
     "shirt": "jersey",
@@ -780,7 +759,7 @@ cc(2); cc(3); cc(7); cc('K'); cc('A');
   var hatValue = testObj.hat;      // Change this line
   var shirtValue = testObj.shirt;    // Change this line
 
-  83. // Setup
+  77. // Setup
   var testObj = {
     "an entree": "hamburger",
     "my side": "veggies",
@@ -792,7 +771,7 @@ cc(2); cc(3); cc(7); cc('K'); cc('A');
   var entreeValue = testObj["an entree"];   // Change this line
   var drinkValue = testObj["the drink"];    // Change this line
 
-  84. // Setup
+  78. // Setup
   var testObj = {
     12: "Namath",
     16: "Montana",
@@ -804,7 +783,7 @@ cc(2); cc(3); cc(7); cc('K'); cc('A');
   var playerNumber = 16;       // Change this line
   var player = testObj[playerNumber];   // Change this line
 
-  85. // Setup
+  79. // Setup
   var myDog = {
     "name": "Coder",
     "legs": 4,
@@ -815,7 +794,7 @@ cc(2); cc(3); cc(7); cc('K'); cc('A');
   myDog["name"] = "Happy Coder";
   // Only change code below this line
 
-  86. var myDog = {
+  80. var myDog = {
     "name": "Happy Coder",
     "legs": 4,
     "tails": 1,
@@ -823,7 +802,7 @@ cc(2); cc(3); cc(7); cc('K'); cc('A');
   };
    myDog.bark = "woof";
 
-   87. // Setup
+   81. // Setup
    var myDog = {
      "name": "Happy Coder",
      "legs": 4,
@@ -834,7 +813,7 @@ cc(2); cc(3); cc(7); cc('K'); cc('A');
    
    delete myDog.tails;// Only change code below this line
 
-   88. // Setup
+   82. // Setup
    function phoneticLookup(val) {
      var result = "";
    
@@ -854,7 +833,7 @@ cc(2); cc(3); cc(7); cc('K'); cc('A');
    
    phoneticLookup("charlie");
 
-   89. function checkObj(obj, checkProp) {
+   83. function checkObj(obj, checkProp) {
     // Only change code below this line
     if  (obj.hasOwnProperty(checkProp))
     {
@@ -863,7 +842,7 @@ cc(2); cc(3); cc(7); cc('K'); cc('A');
     {return "Not Found";}
     // Only change code above this line
   }
-  90. var myMusic = [
+  84. var myMusic = [
     {
       "artist": "Billy Joel",
       "title": "Piano Man",
@@ -890,7 +869,7 @@ cc(2); cc(3); cc(7); cc('K'); cc('A');
     }
   ];
 
-  91. var myStorage = {
+  85. var myStorage = {
     "car": {
       "inside": {
         "glove box": "maps",
@@ -904,8 +883,7 @@ cc(2); cc(3); cc(7); cc('K'); cc('A');
   
   var gloveBoxContents = myStorage.car.inside["glove box"];
 
-94. 
-var myPlants = [
+  86. var myPlants = [
     {
       type: "flowers",
       list: [
@@ -926,10 +904,9 @@ var myPlants = [
   
   var secondTree = myPlants[1].list[1];
 
-95. 
+  87. 
 
-96. 
-var myArray = [];
+  88. var myArray = [];
   var i = 5;
   while(i > -1 ) {
     myArray.push(i);
@@ -937,131 +914,95 @@ var myArray = [];
   }
   console.log(myArray)
 
-97. 
-var myArray = [];
+  89. var myArray = [];
   for(var i = 1; i <6; i++) {
     myArray.push(i)
   }
 
-98. 
-var myArray = [];
+   90. var myArray = [];
    for(var i = 1; i <10; i +=2) {
      myArray.push(i);
    }
    console.log(myArray)
 
-99. 
-var myArray = [];
+   91. var myArray = [];
    for (var i =9; i >0; i-=2 ) {
      myArray.push(i)
    }
    console.log(myArray)
 
-100. 
-var myArr = [ 2, 3, 4, 5, 6];
+   92. var myArr = [ 2, 3, 4, 5, 6];
    var total = 0;
    for (var i = 0; i < myArr.length; i++) {
      total += myArr[i];
    }
 
-101. 
-function multiplyAll(arr) {
+   93. function multiplyAll(arr) {
     var product = 1;
+    // Only change code below this line
   for (var i = 0; i < arr.length; i++){
     for (var j= 0; j <arr[i].length; j++) {
       product *= arr [i][j]
     }
   }
+    // Only change code above this line
     return product;
   }
   console.log()
   multiplyAll([[1,2],[3,4],[5,6,7]]);
 
-102. 
+  94. // Setup
   var myArray = [];
   var i = 10;
+  
+  // Only change code below this line
   do   {
     myArray.push(i);
     i++;
+  
+  
   }while (i < 5);
 
-103. 
-function sum(arr, n) {
- if (n <= 0) {
-          return 0;
-        } else {
-          return sum(arr, n - 1) + arr[n - 1];  //выводим сумму первых n чисел массива. функция с помощью рекурсии
-        }
-    }
-console.log (sum(6,2))
+  95. 
 
-104.
 
-105.
-
-106.
-
-107.
-
-108. 
-function convertToInteger(str) {
+  100. function convertToInteger(str) {
     return parseInt(str);                  //ParseInt преобразует в целое число
     }
     
     convertToInteger("56");
     console.log(convertToInteger)
 
-109. 
-function convertToInteger(str) {
+  101. function convertToInteger(str) {
     return parseInt (str,2);     //можно преобразовавыть из системы счисления одной в другую. желаемая сисстема счисления указывается через запятую после числа
     }
     
     convertToInteger("10011");
     console.log(convertToInteger)
 
-110. 
-function checkEqual(a, b) {
+  102. function checkEqual(a, b) {
     return a===b ? "Equal" : "Not Equal";  // здесь нужно строгое равенство именно три с одним не возвращает ответ "нет"
     }
     
     checkEqual(1, 2);
     console.log(checkEqual)
 
-111.
- function checkSign(num) {
+  103.; function checkSign(num) {
   return (num > 0) ? "positive" 
   : (num < 0) ? "negative"
    : "zero";                               // этот код реально не работает в браузере,, но задание правильно считается в кодкэмпе
   }
     checkSign(10);
+  104.
 
 
-112.  
-  function countdown(n){
-    if (n < 1) {
-    return [];
-    } else {
-      const countArray = countdown(n-1);    
-      countArray.unshift(n);     // использую unshift для того чтобы перевернуть массив сзади наперёд
-      return countArray;
-    } 
-  }
-  console.log(countdown(10));
-   
-113.  
-  function rangeOfNumbers(startNum, endNum) { 
-    if (endNum - startNum === 0) {
-    return [startNum];
-    } else {
-      var countArray = rangeOfNumbers(startNum,endNum-1);     //возращаю с помощьб рекурсии массив чисел от и до заданных чисел
-      countArray.push(endNum);     
-  return countArray;
-    }
-};
-console.log (rangeOfNumbers(6, 9))
 
 
-                                                                        // Раздел ES6
+
+
+
+
+  // Раздел ES6
 
   
   1. let catName;
@@ -1698,22 +1639,19 @@ if (arr.indexOf(elem) >= 0) {
 }
 console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));
 
-11.  function filteredArray(arr, elem) {
-  let newArr = [];
-  // Only change code below this line
- for (let i = 0; i < arr.length; i++) {            // бзззз
-    if (arr[i].indexOf(elem) == -1) {
-      
-      newArr.push(arr[i]); 
-    }
-  }
-  // Only change code above this line
-  return newArr;
-}
+11. 
 
-console.log(filteredArray([[3, 2, 3], [1, 6, 3], [3, 13, 26], [19, 3, 9]], 3));
+12.
+let myNestedArray = [
+  ['unshift', false, 1, 2, 3, 'complex', 'nested'],
+  ['loop', 'shift', 6, 7, 1000, 'method'],
+  ['concat', false, true, 'spread', 'array',['deep']],
+  ['mutate', 1327.98, 'splice', 'slice', [['deeper']],'push'],
+  ['iterate', 1.3849, 7, '8.4876',[[['deepest']]], 'arbitrary', 'depth']
+];
 
-12.  
+13. 
+
 
 
 
@@ -2019,47 +1957,3 @@ console.log(filteredArray([[3, 2, 3], [1, 6, 3], [3, 13, 26], [19, 3, 9]], 3));
   }
   
   console.log(mixedNumbers(['IV', 5, 'six']));
-
-
-
-  // Функциональное програмирование
-
-
-  1.    const prepareTea = () => 'greenTea';
-  
-  const getTea = (numOfCups) => {
-    const teaCups = [];
-  
-    for(let cups = 1; cups <= numOfCups; cups += 1) {
-      const teaCup = prepareTea();
-      teaCups.push(teaCup);
-    }
-    return teaCups;
-  };
-
-   const tea4TeamFCC = getTea(40);                 // вызываем 40 чашек чая
-  
-
-2.  const prepareGreenTea = () => 'greenTea';
-
-const prepareBlackTea = () => 'blackTea';
-
-const getTea = (prepareTea, numOfCups) => {
-  const teaCups = [];
-
-  for(let cups = 1; cups <= numOfCups; cups += 1) {
-    const teaCup = prepareTea();
-    teaCups.push(teaCup);
-  }
-  return teaCups;
-};
-
-const tea4GreenTeamFCC = getTea(prepareGreenTea, 27);   //вызываю 27 чашек зелёного чая, указывая уже конкрентую переменую  prepareGreenTea
-const tea4BlackTeamFCC = getTea(prepareBlackTea,13);     // здесь уже чёрный чай и 13 чашек
-
-console.log(
-  tea4GreenTeamFCC,
-  tea4BlackTeamFCC
-);\
-
-3. 
