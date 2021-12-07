@@ -1640,14 +1640,24 @@ if (arr.indexOf(elem) >= 0) {
 console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));
 
 11. 
+function filteredArray(arr, elem) {
+  let newArr = [];
+for (let i = 0; i < arr.length; i++) {
+    if (arr[i].indexOf(elem) == -1) {   // как понял, все массивы не содержащие 3 будут удалены
+      newArr.push(arr[i]);
+    }
+  }
+  return newArr;
+}
+console.log(filteredArray([[3, 2, 3], [1, 6, 3], [3, 13, 26], [19, 3, 9]], 3));
 
 12.
 let myNestedArray = [
   ['unshift', false, 1, 2, 3, 'complex', 'nested'],
   ['loop', 'shift', 6, 7, 1000, 'method'],
-  ['concat', false, true, 'spread', 'array',['deep']],
-  ['mutate', 1327.98, 'splice', 'slice', [['deeper']],'push'],
-  ['iterate', 1.3849, 7, '8.4876',[[['deepest']]], 'arbitrary', 'depth']
+  ['concat', false, true, 'spread', 'array',['deep']],   // вкладываю массив в массив
+  ['mutate', 1327.98, 'splice', 'slice', [['deeper']],'push'],  // вкладываю в массив двойной массив
+  ['iterate', 1.3849, 7, '8.4876',[[['deepest']]], 'arbitrary', 'depth'] // вкладываю в массив тройной массив
 ];
 
 13. 
