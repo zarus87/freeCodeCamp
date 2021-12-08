@@ -1660,7 +1660,8 @@ let myNestedArray = [
   ['iterate', 1.3849, 7, '8.4876',[[['deepest']]], 'arbitrary', 'depth'] // вкладываю в массив тройной массив
 ];
 
-13. let foods = {
+13. 
+let foods = {
   apples: 25,
   oranges: 32,
   plums: 28
@@ -1674,6 +1675,19 @@ foods.strawberries = 27;
 
 console.log(foods);
 
+14.
+let userActivity = {
+  id: 23894201352,
+  date: 'January 1, 2017',
+  data: {
+    totalUsers: 51,
+    online: 42
+  }
+};
+userActivity.data.online = 45        // изменяю значения вложенного параметра 
+console.log(userActivity);
+
+15.
 
 
 
