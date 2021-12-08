@@ -1660,7 +1660,19 @@ let myNestedArray = [
   ['iterate', 1.3849, 7, '8.4876',[[['deepest']]], 'arbitrary', 'depth'] // вкладываю в массив тройной массив
 ];
 
-13. 
+13. let foods = {
+  apples: 25,
+  oranges: 32,
+  plums: 28
+};
+
+// Only change code below this line
+foods.bananas = 13,         //добавляю в обьект новые переменные и их свойства
+foods.grapes = 35,
+foods.strawberries = 27;
+// Only change code above this line
+
+console.log(foods);
 
 
 
