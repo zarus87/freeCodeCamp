@@ -1748,8 +1748,17 @@ function isEveryoneHere(userObj) {
 console.log(isEveryoneHere(users));
 
 18.
+function countOnline(usersObj) {
+let result = 0;
+  for (let user in usersObj) {
+    if (usersObj[user].online === true) {
+      result++;
+    }
+  }
+  return result;
+}
 
-
+19.
 
 
 
