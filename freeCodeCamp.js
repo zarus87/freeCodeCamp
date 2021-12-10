@@ -1759,57 +1759,115 @@ let result = 0;
 }
 
 19.
+let users = {
+  Alan: {
+    age: 27,
+    online: false
+  },
+  Jeff: {
+    age: 32,
+    online: true
+  },
+  Sarah: {
+    age: 48,
+    online: false
+  },
+  Ryan: {
+    age: 19,
+    online: true
+  }
+};
 
+function getArrayOfUsers(obj) {
+return Object.keys(obj)       // применения метода Object.keys для перачесления всех ключей и возвращения их в виде массива
+}
 
+console.log(getArrayOfUsers(users));
 
+20.
+let user = {
+  name: 'Kenneth',
+  age: 28,
+  data: {
+    username: 'kennethCodesAllDay',
+    joinDate: 'March 26, 2016',
+    organization: 'freeCodeCamp',
+    friends: [
+      'Sam',
+      'Kira',
+      'Tomo'
+    ],
+    location: {
+      city: 'San Francisco',
+      state: 'CA',
+      country: 'USA'
+    }
+  }
+};
+
+function addFriend(userObj, friend) {
+  // Only change code below this line
+userObj.data.friends.push(friend)
+return userObj.data.friends
+  // Only change code above this line
+}
+
+console.log(addFriend(user, 'Pete'));
 
 
 
 // Раздел Обьектно ориентированного программирования
 
-1. let dog = {
-    name: "floki",
-    numLegs: 4
-    };
+1. 
+let dog = {
+name: "floki",
+numLegs: 4
+};
 
-2. let dog = {
-    name: "Spot",
-    numLegs: 4
-  };
-  console.log(dog.name, dog.numLegs)    
+2. 
+let dog = {
+name: "Spot",
+numLegs: 4
+};
+console.log(dog.name, dog.numLegs)    
 
-3. let dog = {
-    name: "Spot",
-    numLegs: 4,
-    sayLegs: function() { 
-    return "This dog has " + dog.numLegs + " legs.";
-  }
-  };
+3.
+let dog = {
+name: "Spot",
+numLegs: 4,
+sayLegs: function() { 
+return "This dog has " + dog.numLegs + " legs.";
+}
+};
   
-  dog.sayLegs();
+dog.sayLegs();
 
-  4. let dog = {
+4. 
+let dog = {
     name: "Spot",
     numLegs: 4,
     sayLegs: function() {return "This dog has " + this.numLegs + " legs.";}
-  };
+};
   
   dog.sayLegs();
 
-  5. function Dog () {
+5. 
+function Dog () {
     this.name = "Albert";
     this.color = "blue";
     this.numLegs = 2;
   }
 
-  6. function Dog() {
+6. 
+function Dog() {
     this.name = "Rupert";
     this.color = "brown";
     this.numLegs = 4;
   }
   let hound = new Dog()
 
-  7. function Dog(name, color) {
+7. 
+function Dog(name, color) {
     this.name = name;
     this.color = color;
     this.numLegs = 4;
@@ -1818,14 +1876,16 @@ let result = 0;
     let terrier = new Dog("zxx","qwe");
     console.log(terrier)
 
-    8. function House(numBedrooms) {
+8. 
+function House(numBedrooms) {
       this.numBedrooms = numBedrooms;
     }
      let myHouse = new House(4);
     
      myHouse instanceof House   // instanceof проверяет является ли myHouse изменёным элементом House
 
-     9. function Bird(name) {
+9.
+function Bird(name) {
       this.name = name;
       this.numLegs = 2;
     }
@@ -1839,7 +1899,8 @@ let result = 0;
       }
     }
 
-    10.   function Dog(name) {
+10.   
+function Dog(name) {
       this.name = name;
     }
     
@@ -1848,7 +1909,8 @@ let result = 0;
 
     let beagle = new Dog("Snoopy");
 
-    11.   function Dog(name) {
+11.   
+function Dog(name) {
       this.name = name;
     }
     
@@ -1868,7 +1930,8 @@ let result = 0;
     }
   
 
-  12.  function Dog(name) {
+12.  
+function Dog(name) {
     this.name = name;
   }
   
@@ -1881,7 +1944,8 @@ let result = 0;
     }
   }
 
-  13.   function Dog(name) {
+13.   
+function Dog(name) {
     this.name = name;
   }
   
@@ -1896,7 +1960,8 @@ let result = 0;
     }
   };
   
-  14. function Dog(name) {
+14. 
+function Dog(name) {
     this.name = name;
   }
   
@@ -1912,20 +1977,23 @@ let result = 0;
     }
   };
 
-  15. function Dog(name) {
+15. 
+function Dog(name) {
     this.name = name;
   }
   let beagle = new Dog("Snoopy");
   Dog.prototype.isPrototypeOf(beagle);   // с помощью isPrototypeOf проверяем что beagle это изменёный Dog.
 
-  16. function Dog(name) {
+16. 
+function Dog(name) {
     this.name = name;
   }
   let beagle = new Dog("Snoopy");
   Dog.prototype.isPrototypeOf(beagle);  
   Object.isPrototypeOf(Dog.prototype);  
 
-  17. function Cat(name) {
+17. 
+function Cat(name) {
     this.name = name;
   }
   
@@ -1950,7 +2018,8 @@ let result = 0;
   }
   };
   
-   18.   function Animal() { }
+18.   
+function Animal() { }
 
    Animal.prototype = {
      constructor: Animal,
@@ -1961,7 +2030,8 @@ let result = 0;
    let duck = Object.create(Animal.prototype);    // создаю обьект и даю ему свойства прототипа, с наследованием
    let beagle = Object.create(Animal.prototype);
 
-   19. function Animal() { }
+19. 
+function Animal() { }
 
    Animal.prototype = {
      constructor: Animal,
@@ -1974,7 +2044,8 @@ let result = 0;
    let beagle = new Dog();
    Dog.prototype = Object.create(Animal.prototype);  // все Dog наследуют свойства Animal
 
-   20.  function Animal() { }
+20.  
+function Animal() { }
    function Bird() { }
    function Dog() { }
    
@@ -1986,7 +2057,8 @@ let result = 0;
    let duck = new Bird();
    let beagle = new Dog();
 
-   21. function Animal() { }
+21. 
+function Animal() { }
    Animal.prototype.eat = function() { console.log("nom nom nom"); };
    function Dog() { }
    Dog.prototype = Object.create(Animal.prototype);
@@ -1997,7 +2069,8 @@ let result = 0;
    };
    let beagle = new Dog();
 
-   22. function Bird() { }
+22. 
+function Bird() { }
 
    Bird.prototype.fly = function() { return "I am flying!"; };
    
@@ -2010,7 +2083,8 @@ let result = 0;
    let penguin = new Penguin();
    console.log(penguin.fly());
 
-   23. let bird = {
+23. 
+let bird = {
     name: "Donald",
     numLegs: 2
   };
@@ -2019,9 +2093,7 @@ let result = 0;
     name: "Warrior",
     type: "race-boat"
   };
-  
-  // Only change code below this line
-  let glideMixin = function(obj) {     //связываю две переменные одним свойством с помощью Mixin
+    let glideMixin = function(obj) {     //связываю две переменные одним свойством с помощью Mixin
     obj.glide = function() {
      
     }
@@ -2029,16 +2101,19 @@ let result = 0;
   glideMixin(bird);
   glideMixin(boat);
 
-  24. function Bird() {
+24. 
+function Bird() {
     let weight = 15
     this.getWeight = () => weight; //применя. замыкание чтобы защитить weight от прямого переназначения
   }
 
-  25. (function () {
+25. 
+(function () {
     console.log("A cozy nest is ready");
   })();                                  //синтаксис немедленно вызываемой ананимной функции
 
-  26. let funModule = (function () {
+26. 
+let funModule = (function () {
     return{
      isCuteMixin : function(obj) {
     obj.isCute = function() {
