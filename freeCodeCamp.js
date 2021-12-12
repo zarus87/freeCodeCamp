@@ -1029,6 +1029,10 @@ updateRecords(recordCollection, 5439, 'artist', 'ABBA');
     checkSign(10);
   104.
 
+  107.
+  function randomRange(myMin, myMax) {
+    return Math.floor(Math.random() * (myMax - myMin + 1) + myMin);
+  }
 
 
 
