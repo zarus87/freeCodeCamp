@@ -2165,4 +2165,12 @@ const finalTabs = socialWindow
   .join(workWindow.tabClose(1).tabOpen());
 console.log(finalTabs.tabs);
 
+4.
+let fixedValue = 4;
+function incrementer() {
+return (fixedValue + 1 );
+}
+
+5.
+
 
