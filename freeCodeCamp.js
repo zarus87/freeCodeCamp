@@ -2172,5 +2172,11 @@ return (fixedValue + 1 );
 }
 
 5.
+let fixedValue = 4;
+function incrementer(prop) {
+return prop +1
+}
+
+6.
 
 
