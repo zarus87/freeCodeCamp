@@ -1,0 +1,23 @@
+ // Решения заданий 
+
+ 1.
+ <h1>Hello World</h1>
+
+ 2.
+ <h1>Hello World</h1>
+<h2>CatPhotoApp</h2>
+
+3.
+<h1>Hello World</h1>
+<h2>CatPhotoApp</h2>
+<p>Hello Paragraph</p>
+
+4.
+<h1>Hello World</h1>
+<h2>CatPhotoApp</h2>
+<p>Kitty ipsum</p>
+ 
+ 5.
+ <h1>Hello World</h1>
+<h2>CatPhotoApp</h2>
+<p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
